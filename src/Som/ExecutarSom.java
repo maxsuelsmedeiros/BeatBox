@@ -31,12 +31,22 @@ public class ExecutarSom {
             Track faixa = infoSom.createTrack();
 
             ShortMessage a = new ShortMessage();
-            a.setMessage(144,1,44,100);
+            a.setMessage(144,1,55,100);
             MidiEvent noteOn = new MidiEvent(a,1);
             faixa.add(noteOn);
 
+            ShortMessage c = new ShortMessage();
+            c.setMessage(192, 1, 100, 127);
+            MidiEvent instrumento1 = new MidiEvent(c,2);
+            faixa.add(instrumento1);
+
+            ShortMessage d = new ShortMessage();
+            c.setMessage(192, 2, 125, 102);
+            MidiEvent instrumento2 = new MidiEvent(d,2);
+            faixa.add(instrumento2);
+
             ShortMessage b = new ShortMessage();
-            b.setMessage(128,1,44,100);
+            b.setMessage(128,1,55,100);
             MidiEvent noteOff = new MidiEvent(b,16);
             faixa.add(noteOff);
 
