@@ -1,0 +1,40 @@
+Projeto BeatBox do livro Use a Cabeça Java, para aprendizado dos conceitos.
+Esse arquivo tem o proposito de armazenar as informações das classes das bibliotecas pré-existentes 
+como o que fazem e como fazem. Esse arquivo é de uso como referência e da minha interpretação das informações
+então as informações aqui podem não ser exatamente corretas.
+
+Classe MidiEvent:
+
+É a subclasse de MIDI, que permite adicionar as informações do que os objetos MIDI devem executar e 
+quando devem executar. As instruções devem informar o momento exato que as instruções devem ocorrer.
+
+Classe Message:
+
+Essa classe contém as informações das instruções, como tocar "C# no teclado", os objetos Message
+devem ser adicionados ao objeto MidiEvent, para que possa ser executado no momento apropriado.
+
+1º argumento: O comando, por exemplo 144 Note On para começar e 128 Note Off para terminar.
+
+2º argumento: O canal, por exemplo canal 1 é para voz, 2 é para guitarra.
+
+3º argumento: A primeira informação de Byte, que nesse caso é qual a nota, que vai de 0 127, de baita
+para alta.
+
+4º argumento: A segunda informação do Byte, que seleciona a intensidade e velocidade, onde 0 é extremamente
+suave e 127 é muito intenso(o livro indica utilizar 100 como meio termo).
+
+O metodo setMessage é sobrecarregado, podendo receber um número diferente de argumentos que configurão
+coisas diferentes na ShortMessage.
+
+Classe Track:
+
+É a classe que contém todos os objetos MidiEvent, o Track seria a faixa de áudio.
+
+Classe Sequence: 
+
+É a classe responsável por organizar e ordenar os objetos Track (as faixas de áudio), no momento correto
+de suas execuções, serve como o nome já diz para organizar a sequência.
+
+Classe Sequencer:
+
+É a responsável por executar a sequência.

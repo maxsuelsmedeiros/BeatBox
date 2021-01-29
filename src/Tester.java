@@ -1,9 +1,9 @@
-import Som.ExecutarSom;
+import Gui.InterfaceGrafica;
 public class Tester {
         
     public static void main(String [] args){
 
-        ExecutarSom s = new ExecutarSom();
-        s.som();
+        InterfaceGrafica gui = new InterfaceGrafica();
+        gui.janela();
     }
 }

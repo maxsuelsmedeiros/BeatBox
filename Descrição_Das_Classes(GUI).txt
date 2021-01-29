@@ -1,0 +1,26 @@
+Projeto BeatBox do livro Use a Cabeça Java, para aprendizado dos conceitos.
+Esse arquivo tem o proposito de armazenar as informações das classes das bibliotecas pré-existentes 
+como o que fazem e como fazem. Esse arquivo é de uso como referência e da minha interpretação das informações
+então as informações aqui podem não ser exatamente corretas.
+
+Classe JFrame:
+
+É a classe que vai conter os botões, as imagens, e afins de uma interface gráfica, como o nome já
+diz "frame" funciona como uma moldura que contém a tela(Ecrã), pode ser configurada para alterar tamanho
+, opacidade, e afins.
+
+Classes de butão:
+
+Existem várias classes que servem de botão(interação usuário->software) algumas delas são:
+
+        ->JButton: Um botão normal, onde o usuário clica e alguma ação normalmente acontece;
+
+Classe Event:
+
+Os eventos são o que permite que os botões da GUI recebam o input do usuário e envie as informações
+para os métodos executarem;
+
+        ->interface ActionListener: permite que se configure um ouvinte, quando o evento for iniciado
+        (exemplo: o usuário clicar no botão) e o objeto listener esta configurado como ouvinte, ele vai
+        receber a informação do inicio do evento e vai ativar o método actionPerformed que vai executar
+        a ação desejada.
