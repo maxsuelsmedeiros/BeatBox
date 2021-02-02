@@ -24,3 +24,9 @@ para os métodos executarem;
         (exemplo: o usuário clicar no botão) e o objeto listener esta configurado como ouvinte, ele vai
         receber a informação do inicio do evento e vai ativar o método actionPerformed que vai executar
         a ação desejada.
+
+Classe JPanel:
+
+É a classe que permite a criar componentes gráficos, como adicionar imagens, criar formas e afins.
+Essa classe tem um método que deve ser sobrePosto o paintComponent(), que é o responsável por gerar
+o componente gráfico, mas esse método NUNCA É CHAMADO EXPLICITAMENTE, a própria JVM que faz o chamado.
