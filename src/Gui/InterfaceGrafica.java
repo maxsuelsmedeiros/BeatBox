@@ -19,7 +19,7 @@ public class InterfaceGrafica implements ActionListener {
         janela.getContentPane().add(BorderLayout.SOUTH, botao); // adiciona o botão criado ao conteúdo  do painel
         TestandoFormas forma = new TestandoFormas();
         janela.getContentPane().add(BorderLayout.CENTER,forma); //adiciona a forma gerada na classe TestandoFormas
-        janela.setSize(300,400);//tamanho em pixels (largura e altura)
+        janela.setSize(1366,766);//tamanho em pixels (largura e altura)
         janela.setVisible(true);//torna visível
     }
 
